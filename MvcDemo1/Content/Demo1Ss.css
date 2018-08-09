@@ -1,0 +1,39 @@
+﻿
+
+
+
+
+
+.clear, .group {
+    display: block;
+}
+
+    .clear::before, .clear::after, .group::before, .group::after {
+        display: table;
+        content: "";
+    }
+
+    .clear, .clear::after, .group, .group::after {
+        clear: both;
+    }
+.nospace {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    word-wrap: break-word;
+}
+.hoc {
+    display: block;
+    margin: 0 auto;
+}
